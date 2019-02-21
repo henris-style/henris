@@ -125,7 +125,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [![Node version](https://img.shields.io/david/henris-style/ease-gradient.svg?style=-square)](https://github.com/henris-style/ease-gradient)
 [![Node version](https://img.shields.io/npm/v/@henris/ease-gradient.svg?style=-square)](https://www.npmjs.com/package/@henris/ease-gradient)
 
-### Logic[
+### Logic
+
+#### Default
+
+[![Node version](https://img.shields.io/github/issues-raw/henris-style/default.svg?style=-square)](https://github.com/henris-style/default/issues)
+[![Node version](https://img.shields.io/npm/l/@henris/default.svg?style=-square)](https://github.com/henris-style/default/blob/master/LICENSE.MD)
+[![Node version](https://img.shields.io/david/henris-style/default.svg?style=-square)](https://github.com/henris-style/default)
+[![Node version](https://img.shields.io/npm/v/@henris/default.svg?style=-square)](https://www.npmjs.com/package/@henris/default)
 
 #### Custom
 
@@ -133,7 +140,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [![Node version](https://img.shields.io/npm/l/@henris/custom.svg?style=-square)](https://github.com/henris-style/custom/blob/master/LICENSE.MD)
 [![Node version](https://img.shields.io/david/henris-style/custom.svg?style=-square)](https://github.com/henris-style/custom)
 [![Node version](https://img.shields.io/npm/v/@henris/custom.svg?style=-square)](https://www.npmjs.com/package/@henris/custom)
-](
+
 
 #### Output
 
@@ -141,7 +148,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [![Node version](https://img.shields.io/npm/l/@henris/output.svg?style=-square)](https://github.com/henris-style/output/blob/master/LICENSE.MD)
 [![Node version](https://img.shields.io/david/henris-style/output.svg?style=-square)](https://github.com/henris-style/output)
 [![Node version](https://img.shields.io/npm/v/@henris/output.svg?style=-square)](https://www.npmjs.com/package/@henris/output)
-)
+
 #### Utils
 
 [![Node version](https://img.shields.io/github/issues-raw/henris-style/utils.svg?style=-square)](https://github.com/henris-style/utils/issues)
@@ -156,7 +163,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [![Node version](https://img.shields.io/npm/l/@henris/math.svg?style=-square)](https://github.com/henris-style/math/blob/master/LICENSE.MD)
 [![Node version](https://img.shields.io/david/henris-style/math.svg?style=-square)](https://github.com/henris-style/math)
 [![Node version](https://img.shields.io/npm/v/@henris/math.svg?style=-square)](https://www.npmjs.com/package/@henris/math)
-
 
 ### Script
 
