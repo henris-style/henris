@@ -1,6 +1,6 @@
 {
   "name": "@henris/next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Henri's Sass Toolbelt",
   "main": "index.scss",
   "scripts": {
@@ -11,8 +11,8 @@
     "build:sass": "sass index.scss dist/sass/index.css",
     "build:node-sass": "node-sass index.scss dist/node-sass/index.css",
     "build:dist": "npm run stylelint:fix && npm run build",
-		"stylelint": "stylelint 'src/scss/**/*.scss'",
-		"stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
+    "stylelint": "stylelint 'src/scss/**/*.scss'",
+    "stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
     "prepublishOnly": "npm run build:dist"
   },
   "repository": {
