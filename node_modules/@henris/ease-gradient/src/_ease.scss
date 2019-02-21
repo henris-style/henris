@@ -1,0 +1,64 @@
+// Ease
+//
+//
+@function to-ease($colors, $ease) {
+	$stops: ();
+
+	@for $i from 1 through 10 {
+		$stop: ();
+		$mix-percentage: 0;
+		@if type-of($ease) == 'list' AND length($ease) == 4 {
+			$mix-percentage: bezier($i, $ease, 10);
+		} @else {
+			$ease: decimal-round(create-ease($ease, $i));
+			$mix-percentage: percentage($ease / 10);
+		}
+		$percentage: percentage($i/10);
+		$color: mix(nth($colors, 1), nth($colors, 2), $percentage);
+		$stops: append($stops, ($color, $mix-percentage));
+	}
+	@return $stops;
+}
+
+// The function
+@function ease-gradient($args...) {
+	$gradient-colors: ();
+	$gradient-ease: null;
+	$gradient-direction: null;
+
+	@each $arg in $args {
+		@if is-color($arg) {
+			$gradient-colors: append($gradient-colors, $arg);
+		}
+		@if is-direction($arg) {
+			$gradient-direction: $arg;
+		}
+	}
+
+	@if is-color(nth($args, length($args))) {
+		@debug "your gradient ends with a color, thus can't be an easing gradient";
+		@return linear-gradient($args);
+	} @else if is-curve(nth($args, length($args))) {
+		@if $gradient-direction {
+			@if length($gradient-colors) > 2 {
+				@return linear-gradient(
+					$gradient-direction,
+					to-string($gradient-colors, ' ')
+				);
+			} @else {
+				$colors: ();
+				$stops: to-ease($gradient-colors, nth($args, length($args)));
+				@each $stop in $stops {
+					$colors: append($colors, to-string($stop, ' '));
+				}
+				@return linear-gradient($gradient-direction, to-string($colors, ','));
+			}
+		} @else {
+			@if length($gradient-colors) > 2 {
+				@return linear-gradient(to-string($gradient-colors, ','));
+			} @else {
+				@return linear-gradient(to-ease($gradient-colors));
+			}
+		}
+	}
+}

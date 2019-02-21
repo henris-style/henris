@@ -1,0 +1,48 @@
+{
+  "name": "@henris/next",
+  "version": "1.0.0",
+  "description": "Henri's Sass Toolbelt",
+  "main": "index.scss",
+  "scripts": {
+    "test": "npm run test:sass && npm run test:node-sass",
+    "test:sass": "sass test/index.scss dist/test/sass/index.css",
+    "test:node-sass": "node-sass test/index.scss dist/test/node-sass/index.css",
+    "build": "npm run build:sass && npm run build:node-sass",
+    "build:sass": "sass index.scss dist/sass/index.css",
+    "build:node-sass": "node-sass index.scss dist/node-sass/index.css",
+    "build:dist": "npm run stylelint:fix && npm run build",
+		"stylelint": "stylelint 'src/scss/**/*.scss'",
+		"stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
+    "prepublishOnly": "npm run build:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henris-style/henris.git"
+  },
+  "keywords": [
+    "Sass",
+    "Toolbelt"
+  ],
+  "author": "Sil van Diepen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henris-style/henris/issues"
+  },
+  "homepage": "https://github.com/henris-style/henris#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.0",
+    "sass-true": "^4.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-logical-order": "0.0.4",
+    "stylelint-order": "^2.0.0"
+  },
+  "dependencies": {
+    "@henris/color": "0.0.1",
+    "@henris/ease-gradient": "0.0.2",
+    "@henris/grid": "0.0.2",
+    "@henris/math": "0.0.1",
+    "@henris/typography": "0.0.1",
+    "@henris/utils": "0.0.1"
+  }
+}

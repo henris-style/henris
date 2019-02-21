@@ -1,0 +1,195 @@
+
+// Fact
+@function fact($number) {
+	$value: 1;
+	@if $number > 0 {
+		@for $i from 1 through $number {
+			$value: $value * $i;
+		}
+	}
+	@return $value;
+}
+
+// Pi
+@function pi() {
+	@return 3.14159265359;
+}
+
+// Rad
+@function rad($angle) {
+	$unit: unit($angle);
+	$unitless: $angle / ($angle * 0 + 1);
+	// If the angle has 'deg' as unit, convert to radians.
+	@if $unit == deg {
+		$unitless: $unitless / 180 * pi();
+	}
+	@return $unitless;
+}
+
+// Sin
+@function sin($angle) {
+	$sin: 0;
+	$angle: rad($angle);
+	// Iterate a bunch of times.
+	@for $i from 0 through 10 {
+		$sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+	}
+	@return $sin;
+}
+
+// Cos
+@function cos($angle) {
+	$cos: 0;
+	$angle: rad($angle);
+	// Iterate a bunch of times.
+	@for $i from 0 through 10 {
+		$cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+	}
+	@return $cos;
+}
+
+// Tan
+@function tan($angle) {
+	@return sin($angle) / cos($angle);
+}
+
+// Round (shortcut)
+@function decimal-round($number, $digits: 0, $mode: round) {
+	$n: 1;
+	// $number must be a number
+	@if type-of($number) != number {
+		@warn '#{$number} is not a number.';
+		@return $number;
+	}
+	// $digits must be a unitless number
+	@if type-of($digits) != number {
+		@warn '#{ $digits} is not a number.';
+		@return $number;
+	} @else if not unitless($digits) {
+		@warn '#{$digits} has a unit.';
+		@return $number;
+	}
+	@for $i from 1 through $digits {
+		$n: $n * 10;
+	}
+	@if $mode == round {
+		@return round($number * $n) / $n;
+	} @else if $mode == ceil {
+		@return ceil($number * $n) / $n;
+	} @else if $mode == floor {
+		@return floor($number * $n) / $n;
+	} @else {
+		@warn '#{$mode} is undefined keyword.';
+		@return $number;
+	}
+}
+
+// Ceil (shortcut)
+@function decimal-ceil($number, $digits: 0) {
+	@return decimal-round($number, $digits, ceil);
+}
+
+// Floor (shortcut)
+@function decimal-floor($number, $digits: 0) {
+	@return decimal-round($number, $digits, floor);
+}
+
+@function number($string) {
+  // ...
+  $result: 0;
+  $divider: 0;
+
+  @for $i from 1 through str-length($string) {
+    // ...
+    @if $character == '-' {
+      // ...
+    } @else if $character == '.' {
+      $divider: 1;
+    } @else {
+      // ...
+
+      // Decimal dot hasn't been found yet
+      @if $divider == 0 {
+        $result: $result * 10;
+      }
+
+      // Decimal dot has been found
+      @else {
+        // Move the decimal dot to the left
+        $divider: $divider * 10;
+        $number: $number / $divider;
+      }
+
+      $result: $result + $number;
+    }
+  }
+
+  @return if($minus, $result * -1, $result);
+}
+
+@function pow($number, $exponent) {
+  @if (round($exponent) != $exponent) {
+    @return exp($exponent * ln($number));
+  }
+   
+  $value: 1;
+  
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+     $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function factorial($value) {
+  $result: 1;
+
+  @if $value == 0 {
+    @return $result;
+  }
+  
+  @for $index from 1 through $value {
+    $result: $result * $index;
+  }
+  
+  @return $result;
+}
+
+@function summation($iteratee, $input, $initial: 0, $limit: 100) {
+  $sum: 0;
+  
+  @for $index from $initial to $limit {
+    $sum: $sum + call($iteratee, $input, $index);
+  }
+  
+  @return $sum;
+}
+
+@function exp-maclaurin($x, $n) {
+  @return (pow($x, $n) / factorial($n));
+}
+
+@function exp($value) {
+  @return summation('exp-maclaurin', $value, 0, 100);
+}
+
+@function ln-maclaurin($x, $n) {
+  @return (pow(-1, $n + 1) / $n) * (pow($x - 1, $n));
+}
+
+@function ln($value) {
+  $ten-exp: 1;
+  $ln-ten: 2.30258509;
+  
+  @while ($value > pow(10, $ten-exp)) {
+    $ten-exp: $ten-exp + 1;
+  }
+  
+  @return summation(ln-maclaurin, $value / pow(10, $ten-exp), 1, 100) + $ten-exp * $ln-ten;
+}
