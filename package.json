@@ -31,19 +31,20 @@
   "homepage": "https://github.com/henris-style/henris#readme",
   "devDependencies": {
     "node-sass": "^4.11.0",
-    "sass": "^1.17.0",
-    "sass-true": "^4.0.0",
+    "sass": "^1.17.1",
+    "ssst": "0.0.4",
     "stylelint": "^9.10.1",
     "stylelint-logical-order": "0.0.4",
     "stylelint-order": "^2.0.0"
   },
   "dependencies": {
-    "@henris/color": "0.0.1",
-    "@henris/ease-gradient": "0.0.2",
-    "@henris/grid": "0.0.2",
-    "@henris/math": "0.0.1",
+    "@henris/color": "0.0.4",
+    "@henris/custom": "0.0.1",
+    "@henris/ease-gradient": "0.0.3",
+    "@henris/grid": "0.0.5",
+    "@henris/math": "0.0.3",
     "@henris/output": "0.0.4",
-    "@henris/typography": "0.0.1",
-    "@henris/utils": "0.0.1"
+    "@henris/typography": "0.0.4",
+    "@henris/utils": "0.0.5"
   }
 }
