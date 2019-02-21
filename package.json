@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/henris-style/henris#readme",
   "devDependencies": {
+    "@henris/custom": "0.0.1",
     "node-sass": "^4.11.0",
     "sass": "^1.17.1",
     "ssst": "0.0.4",
@@ -39,7 +40,6 @@
   },
   "dependencies": {
     "@henris/color": "0.0.4",
-    "@henris/custom": "0.0.1",
     "@henris/ease-gradient": "0.0.3",
     "@henris/grid": "0.0.5",
     "@henris/math": "0.0.3",
