@@ -1,7 +1,9 @@
 # Henri's
 ## Your Sass Toolbelt
 
-[```
+Easily use sass with a toolbelt full of functionality.
+
+```
 npm install henris
 ```
 
@@ -83,11 +85,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Sil van Diepen** 
+**Sil van Diepen** 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
 
