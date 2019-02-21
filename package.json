@@ -42,6 +42,7 @@
     "@henris/ease-gradient": "0.0.2",
     "@henris/grid": "0.0.2",
     "@henris/math": "0.0.1",
+    "@henris/output": "0.0.4",
     "@henris/typography": "0.0.1",
     "@henris/utils": "0.0.1"
   }
