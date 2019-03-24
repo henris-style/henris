@@ -39,13 +39,14 @@
     "stylelint-order": "^2.0.0"
   },
   "dependencies": {
-    "@henris/color": "0.0.4",
-    "@henris/default": "0.0.1",
-    "@henris/ease-gradient": "0.0.3",
-    "@henris/grid": "0.0.6",
-    "@henris/math": "0.0.3",
-    "@henris/output": "0.0.6",
-    "@henris/typography": "0.0.4",
-    "@henris/utils": "0.0.5"
+    "@henris/color": "^0.0.4",
+    "@henris/default": "^0.0.1",
+    "@henris/ease-gradient": "^0.0.3",
+    "@henris/grid": "^0.0.6",
+    "@henris/math": "^0.0.3",
+    "@henris/output": "^0.0.6",
+    "@henris/typography": "^0.0.4",
+    "@henris/utils": "^0.0.5",
+    "@henris/reset": "^0.0.1"
   }
 }
