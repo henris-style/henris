@@ -3,8 +3,10 @@
 
 Easily use sass with a toolbelt full of functionality.
 
+This is a beta version of Henri's 1.0. The current stable version of Henri's can be found on  [Henri's on Matise](https://github.com/matiseams/henris).
+
 ```
-npm install henris
+npm install @henris/next
 ```
 
 **More information:**
@@ -24,26 +26,32 @@ Installation is simple, just npm install the package and go!
 Install the package using npm
 
 ```
-npm install henris
+npm install @henris/next
 ```
 or
 ```
-yarn add henris
+yarn add @henris/next
 ```
 
 **Import in project**
 
-Import the file into you main scss file.
+Import the file into you main scss file. The base doesn't have any output. So you can @import 'henris'; anywhere without any output.
 
 ```
-@import 'henris';
+@import '@henris/next';
 ```
 
-Or in another file where you don't want the full output, just the functions.
+If you want to have the default output from Henri's.
 
 ```
-@import 'henris/ext';
+@import '~@henris/custom';
+
+$output: set-output(css, true);
+// You can add more $output settings here. 
+
+@import '~@henris/next';
 ```
+
 
 ## Running the tests
 
@@ -118,6 +126,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [![Node version](https://img.shields.io/david/henris-style/typography.svg?style=-square)](https://github.com/henris-style/typography)
 [![Node version](https://img.shields.io/npm/v/@henris/typography.svg?style=-square)](https://www.npmjs.com/package/@henris/typography)
 
+
+#### Reset
+
+[![Node version](https://img.shields.io/github/issues-raw/henris-style/reset.svg?style=-square)](https://github.com/henris-style/reset/issues)
+[![Node version](https://img.shields.io/npm/l/@henris/reset.svg?style=-square)](https://github.com/henris-style/reset/blob/master/LICENSE.MD)
+[![Node version](https://img.shields.io/david/henris-style/reset.svg?style=-square)](https://github.com/henris-style/reset)
+[![Node version](https://img.shields.io/npm/v/@henris/reset.svg?style=-square)](https://www.npmjs.com/package/@henris/reset)
 #### Ease Gradient
 
 [![Node version](https://img.shields.io/github/issues-raw/henris-style/ease-gradient.svg?style=-square)](https://github.com/henris-style/ease-gradient/issues)
