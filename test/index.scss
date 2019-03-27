@@ -1,2 +1,5 @@
-@import "../node_modules/sass-true/sass/true";
-@debug 'Tests yet to be made';
+
+// Import Ssst test suite
+@import '../node_modules/ssst/index.scss';
+
+@debug 'global tests, yet to be made';
