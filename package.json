@@ -48,6 +48,6 @@
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
     "@henris/typography": "^0.0.8",
-    "@henris/utils": "^0.0.9"
+    "@henris/utils": "^0.0.10"
   }
 }
