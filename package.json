@@ -47,8 +47,8 @@
     "@henris/math": "^0.0.3",
     "@henris/menu": "0.0.1",
     "@henris/output": "^0.0.6",
-    "@henris/reset": "^0.0.1",
+    "@henris/reset": "^0.0.12",
     "@henris/typography": "^0.0.8",
-    "@henris/utils": "^0.0.10"
+    "@henris/utils": "^0.0.11"
   }
 }
