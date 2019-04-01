@@ -42,12 +42,12 @@
     "@henris/color": "^0.0.6",
     "@henris/default": "^0.0.1",
     "@henris/ease-gradient": "^0.0.3",
-    "@henris/forms": "0.0.1",
+    "@henris/forms": "0.0.2",
     "@henris/grid": "^0.0.6",
     "@henris/math": "^0.0.3",
     "@henris/menu": "0.0.1",
     "@henris/output": "^0.0.6",
-    "@henris/reset": "^0.0.12",
+    "@henris/reset": "^0.0.1",
     "@henris/typography": "^0.0.8",
     "@henris/utils": "^0.0.11"
   }
