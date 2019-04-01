@@ -42,7 +42,7 @@
     "@henris/color": "^0.0.6",
     "@henris/default": "^0.0.1",
     "@henris/ease-gradient": "^0.0.3",
-    "@henris/forms": "0.0.2",
+    "@henris/forms": "0.0.3",
     "@henris/grid": "^0.0.6",
     "@henris/math": "^0.0.3",
     "@henris/menu": "0.0.1",
