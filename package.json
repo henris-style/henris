@@ -10,10 +10,10 @@
     "build": "npm run build:sass && npm run build:node-sass",
     "build:sass": "sass index.local.scss dist/sass/index.css",
     "build:node-sass": "node-sass index.local.scss dist/node-sass/index.css",
-    "build:dist": "npm run stylelint:fix && npm run build",
-    "stylelint": "stylelint 'src/scss/**/*.scss'",
-    "stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
-    "prepublishOnly": "npm run build:dist"
+    "build:dist": "npm run build",
+    "stylelint": "stylelint 'src/**/*.scss'",
+    "stylelint:fix": "stylelint 'src/**/*.scss' --fix",
+    "prepublishOnly": "npm run test"
   },
   "repository": {
     "type": "git",
