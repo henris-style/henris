@@ -39,7 +39,7 @@
     "stylelint-order": "^2.1.0"
   },
   "dependencies": {
-    "@henris/color": "^0.0.6",
+    "@henris/color": "^0.1.1",
     "@henris/default": "^0.0.1",
     "@henris/ease-gradient": "^0.0.3",
     "@henris/forms": "^0.0.4",
