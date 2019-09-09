@@ -1,6 +1,6 @@
 {
   "name": "@henris/next",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Henri's Sass Toolbelt",
   "main": "index.scss",
   "scripts": {
