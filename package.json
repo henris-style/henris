@@ -32,18 +32,18 @@
   "devDependencies": {
     "@henris/custom": "0.0.2",
     "node-sass": "^4.12.0",
-    "sass": "^1.21.0",
-    "ssst": "0.0.5",
+    "sass": "^1.22.10",
+    "ssst": "0.0.7",
     "stylelint": "^10.1.0",
-    "stylelint-logical-order": "0.0.5",
-    "stylelint-order": "^3.0.0"
+    "stylelint-logical-order": "0.0.6",
+    "stylelint-order": "^3.1.0"
   },
   "dependencies": {
-    "@henris/color": "^0.1.1",
+    "@henris/color": "^0.1.2",
     "@henris/default": "^0.0.1",
     "@henris/ease-gradient": "^0.0.3",
     "@henris/forms": "^0.0.4",
-    "@henris/grid": "^0.0.6",
+    "@henris/grid": "^0.0.7",
     "@henris/math": "^0.0.3",
     "@henris/menu": "^0.0.2",
     "@henris/output": "^0.0.6",
