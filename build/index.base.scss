@@ -1,0 +1,8 @@
+// Load custom-output & setting tools
+@import 'node_modules/@henris/default/index.scss';
+@import 'node_modules/@henris/utils/index.scss';
+@import 'node_modules/@henris/custom/index.scss';
+
+$output: set-output(css, true);
+
+@import '../index.local.scss';
