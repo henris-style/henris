@@ -1,5 +1,3 @@
+@import '../node_modules/@henris/default/index.scss';
 
-// Import Ssst test suite
-@import '../node_modules/ssst/index.scss';
-
-@debug 'global tests, yet to be made';
+@import '../node_modules/@henris/color/test/index.scss';

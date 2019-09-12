@@ -1,3 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import '../node_modules/@henris/default/index.scss';
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   node_modules/@henris/color/test/index.scss 2:9  @import
+ *   test/index.scss 3:9                             root stylesheet */
 
-
-/*# sourceMappingURL=index.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import '../node_modules/@henris/default/index.scss';\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   node_modules/@henris/color/test/index.scss 2:9  @import\a   test/index.scss 3:9                             root stylesheet";
+}
