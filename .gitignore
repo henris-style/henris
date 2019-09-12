@@ -1,4 +1,6 @@
 /node_modules
 /dist/**
-!/dist/henris-base.css
+!/dist/henris.base.css
+!/dist/henris.base.min.css
 !/dist/henris.css
+!/dist/henris.min.css
