@@ -32,7 +32,7 @@
   "devDependencies": {
     "@henris/custom": "0.0.2",
     "node-sass": "^4.12.0",
-    "sass": "^1.22.10",
+    "sass": "^1.22.12",
     "ssst": "0.0.7",
     "stylelint": "^10.1.0",
     "stylelint-logical-order": "0.0.6",
@@ -42,7 +42,7 @@
     "@henris/color": "^0.1.2",
     "@henris/default": "^0.0.1",
     "@henris/ease-gradient": "^0.0.3",
-    "@henris/forms": "^0.0.9",
+    "@henris/forms": "^0.0.10",
     "@henris/grid": "^0.0.11",
     "@henris/math": "^0.0.3",
     "@henris/menu": "^0.0.2",
