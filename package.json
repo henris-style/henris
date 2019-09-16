@@ -45,7 +45,7 @@
   "dependencies": {
     "@henris/color": "^0.1.2",
     "@henris/debug": "0.0.1",
-    "@henris/default": "^0.0.1",
+    "@henris/default": "^0.0.2",
     "@henris/ease-gradient": "^0.0.3",
     "@henris/forms": "^0.0.16",
     "@henris/grid": "^0.0.11",
