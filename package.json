@@ -38,16 +38,16 @@
     "node-sass": "^4.12.0",
     "sass": "^1.22.12",
     "ssst": "0.0.7",
-    "stylelint": "^10.1.0",
+    "stylelint": "^11.0.0",
     "stylelint-logical-order": "0.0.6",
-    "stylelint-order": "^3.1.0"
+    "stylelint-order": "^3.1.1"
   },
   "dependencies": {
     "@henris/color": "^0.1.2",
     "@henris/debug": "0.0.1",
-    "@henris/default": "^0.0.1",
+    "@henris/default": "^0.0.2",
     "@henris/ease-gradient": "^0.0.3",
-    "@henris/forms": "^0.0.16",
+    "@henris/forms": "^0.0.18",
     "@henris/grid": "^0.0.11",
     "@henris/math": "^0.0.3",
     "@henris/menu": "^0.0.2",
