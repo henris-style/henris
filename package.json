@@ -1,6 +1,6 @@
 {
   "name": "henris",
-  "version": "1.2.10-beta-2",
+  "version": "1.2.10",
   "description": "Henri's Sass Toolbelt",
   "main": "index.scss",
   "scripts": {
