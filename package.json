@@ -1,6 +1,6 @@
 {
   "name": "henris",
-  "version": "1.2.10",
+  "version": "1.2.10-beta",
   "description": "Henri's Sass Toolbelt",
   "main": "index.scss",
   "scripts": {
@@ -43,7 +43,7 @@
     "stylelint-order": "^3.1.1"
   },
   "dependencies": {
-    "@henris/color": "^0.1.2",
+    "@henris/color": "^0.1.2-beta",
     "@henris/debug": "0.0.1",
     "@henris/default": "^0.0.2",
     "@henris/ease-gradient": "^0.0.3",
