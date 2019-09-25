@@ -3,10 +3,8 @@
 
 Easily use sass with a toolbelt full of functionality.
 
-This is a beta version of Henri's 1.0. The current stable version of Henri's can be found on  [Henri's on Matise](https://github.com/matiseams/henris).
-
 ```
-npm install @henris/next
+npm install henris
 ```
 
 **More information:**
@@ -26,11 +24,11 @@ Installation is simple, just npm install the package and go!
 Install the package using npm
 
 ```
-npm install @henris/next
+npm install henris
 ```
 or
 ```
-yarn add @henris/next
+yarn add henris
 ```
 
 **Import in project**
@@ -38,7 +36,7 @@ yarn add @henris/next
 Import the file into you main scss file. The base doesn't have any output. So you can @import 'henris'; anywhere without any output.
 
 ```
-@import '@henris/next';
+@import '~henris';
 ```
 
 If you want to have the default output from Henri's.
@@ -49,7 +47,7 @@ If you want to have the default output from Henri's.
 $output: set-output(css, true);
 // You can add more $output settings here. 
 
-@import '~@henris/next';
+@import '~henris';
 ```
 
 
