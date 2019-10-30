@@ -35,7 +35,7 @@
   "homepage": "https://github.com/henris-style/henris#readme",
   "devDependencies": {
     "@henris/custom": "0.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "sass": "^1.23.1",
     "ssst": "0.0.7",
     "stylelint": "^11.1.1",
@@ -48,12 +48,12 @@
     "@henris/default": "^0.0.2",
     "@henris/ease-gradient": "^0.0.3",
     "@henris/forms": "^0.0.18",
-    "@henris/grid": "^0.0.11",
+    "@henris/grid": "^0.0.12",
     "@henris/math": "^0.0.3",
     "@henris/menu": "^0.0.3",
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
     "@henris/typography": "^0.0.8",
-    "@henris/utils": "^0.0.14"
+    "@henris/utils": "^0.0.15"
   }
 }
