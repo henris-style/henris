@@ -50,7 +50,7 @@
     "@henris/forms": "^0.0.18",
     "@henris/grid": "^0.0.14",
     "@henris/math": "^0.0.3",
-    "@henris/menu": "^0.0.3",
+    "@henris/menu": "^0.0.4",
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
     "@henris/typography": "^0.0.8",
