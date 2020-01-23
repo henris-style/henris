@@ -35,12 +35,12 @@
   "homepage": "https://github.com/henris-style/henris#readme",
   "devDependencies": {
     "@henris/custom": "0.0.2",
-    "node-sass": "^4.13.0",
-    "sass": "^1.23.3",
+    "node-sass": "^4.13.1",
+    "sass": "^1.25.0",
     "ssst": "0.0.7",
-    "stylelint": "^11.1.1",
+    "stylelint": "^13.0.0",
     "stylelint-logical-order": "0.0.6",
-    "stylelint-order": "^3.1.1"
+    "stylelint-order": "^4.0.0"
   },
   "dependencies": {
     "@henris/color": "^0.1.4",
@@ -53,7 +53,7 @@
     "@henris/menu": "^0.0.4",
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
-    "@henris/typography": "^0.0.8",
-    "@henris/utils": "^0.0.15"
+    "@henris/typography": "^0.0.9",
+    "@henris/utils": "^0.0.17"
   }
 }
