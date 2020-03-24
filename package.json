@@ -39,7 +39,7 @@
     "sass": "^1.25.0",
     "ssst": "0.0.7",
     "stylelint": "^13.0.0",
-    "stylelint-logical-order": "0.0.6",
+    "stylelint-logical-order": "0.0.7",
     "stylelint-order": "^4.0.0"
   },
   "dependencies": {
