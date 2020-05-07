@@ -53,7 +53,7 @@
     "@henris/menu": "^0.0.4",
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
-    "@henris/typography": "^0.0.9",
+    "@henris/typography": "^0.1.0",
     "@henris/utils": "^0.0.17"
   }
 }
