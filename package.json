@@ -54,6 +54,6 @@
     "@henris/output": "^0.0.6",
     "@henris/reset": "^0.0.1",
     "@henris/typography": "^0.0.9",
-    "@henris/utils": "^0.0.17"
+    "@henris/utils": "^0.0.20"
   }
 }
